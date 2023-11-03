@@ -8,7 +8,7 @@ import requests
 
 bot = telebot.TeleBot("6989513685:AAHSpFk79QnIdiHnGgeXJO5gmKM4oUMY4ZA")
 
-@bot.message_handler(commands=func lambda message: True)
+@bot.message_handler(func = lambda message: True)
 def echo_message(message):
  if message.text == "Помощь" or message.text == "помощь":
   bot.send_message(message.chat.id, "Например вводишь команды:\n1) <ваша ссылка>:<порт> - google.com:443\n2) Помощь - помощь с командами\n3) Стоп - остановить атаку\n4) Статус - посмотреть статус атаки")
