@@ -23,7 +23,7 @@ def echo_message(message):
   bot.send_message(message.chat.id, view.text)
  elif message.text == message.text:
   chat = message.text
-  view = requests.get(f"http://ip172-18-0-44-cl29m1efml8g00d3kk40-8080.direct.labs.play-with-docker.com/{chat.text}")
+  view = requests.get(f"http://ip172-18-0-44-cl29m1efml8g00d3kk40-8080.direct.labs.play-with-docker.com/{chat}")
   bot.send_message(message.chat.id, view.text)
 
 bot.polling(none_stop=True)
