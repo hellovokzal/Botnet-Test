@@ -17,7 +17,7 @@ def echo_message(message):
   if view.text == "Started!":
    bot.send_message(message.chat.id, "Атака активна!")
   else:
-   bot.send_message(message.chat.id, "Атака не активна")
+   bot.send_message(message.chat.id, "Атака не активна!")
  elif message.text == "Стоп" or message.text == "стоп":
   view = requests.get("http://ip172-18-0-44-cl29m1efml8g00d3kk40-8080.direct.labs.play-with-docker.com/stop")
   bot.send_message(message.chat.id, view.text)
